@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="searchbar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kUO-p7-SAr">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="46"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tia-LC-18A">
+                                <rect key="frame" x="0.0" y="0.0" width="252" height="46"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-Fe-t7F">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="46"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xe5-gy-X50">
+                                                <rect key="frame" x="0.0" y="13.999999999999996" width="20" height="18.333333333333332"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="fhA-nk-6IW"/>
+                                                    <constraint firstAttribute="width" constant="20" id="oND-hE-2eG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search about service" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YLD-LK-8BB">
+                                                <rect key="frame" x="28" y="13.666666666666666" width="184" height="18.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPb-BH-d6c">
+                                                <rect key="frame" x="220" y="7" width="32" height="32"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-Tp-ZL3">
+                                                        <rect key="frame" x="6" y="8.6666666666666643" width="20" height="15"/>
+                                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="KXT-Zm-Tgc"/>
+                                                            <constraint firstAttribute="height" constant="20" id="XFc-Ps-JP4"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="RUp-Tp-ZL3" firstAttribute="centerX" secondItem="pPb-BH-d6c" secondAttribute="centerX" id="R2Y-lr-968"/>
+                                                    <constraint firstItem="RUp-Tp-ZL3" firstAttribute="centerY" secondItem="pPb-BH-d6c" secondAttribute="centerY" id="UyM-Eu-GQe"/>
+                                                    <constraint firstAttribute="height" constant="32" id="dHj-s6-dnu"/>
+                                                    <constraint firstAttribute="width" constant="32" id="oAO-5S-vIy"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KMj-Fe-t7F" secondAttribute="bottom" id="VIL-mD-uJT"/>
+                                    <constraint firstItem="KMj-Fe-t7F" firstAttribute="leading" secondItem="Tia-LC-18A" secondAttribute="leading" id="eD1-Xq-lz9"/>
+                                    <constraint firstAttribute="trailing" secondItem="KMj-Fe-t7F" secondAttribute="trailing" id="jSY-1M-WtH"/>
+                                    <constraint firstItem="KMj-Fe-t7F" firstAttribute="top" secondItem="Tia-LC-18A" secondAttribute="top" id="m9Y-FF-PZ0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-zb-CYa">
+                                <rect key="frame" x="260" y="0.0" width="80" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2mq-zM-10g"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2Hg-xI-zjl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kUO-p7-SAr" secondAttribute="trailing" id="3lh-bB-DdM"/>
+                <constraint firstItem="kUO-p7-SAr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OZO-uu-IAH"/>
+                <constraint firstAttribute="bottom" secondItem="kUO-p7-SAr" secondAttribute="bottom" id="OuY-dz-siV"/>
+                <constraint firstItem="kUO-p7-SAr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="owr-rV-a5Q"/>
+            </constraints>
+            <size key="customSize" width="340" height="46"/>
+            <connections>
+                <outlet property="cancelButton" destination="NAj-zb-CYa" id="F9b-81-jhj"/>
+                <outlet property="clearButton" destination="RUp-Tp-ZL3" id="gWO-jm-g0z"/>
+                <outlet property="clearView" destination="pPb-BH-d6c" id="BdY-nw-ILf"/>
+                <outlet property="searchView" destination="Tia-LC-18A" id="6Rc-dG-AYm"/>
+                <outlet property="textField" destination="YLD-LK-8BB" id="r3i-XX-INb"/>
+            </connections>
+            <point key="canvasLocation" x="351.14503816793894" y="-95.070422535211279"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
